@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-08T17:23:29 IST" name="Suite" finished-at="2025-09-08T17:25:35 IST" duration-ms="125407">
+    <groups>
+      <group name="filter">
+        <method signature="EndToEndCombinedTests.testFilterAndSort(java.lang.String,java.lang.String)[pri:4, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="testFilterAndSort" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- filter -->
+      <group name="product">
+        <method signature="EndToEndCombinedTests.addFirstProductToCartTest()[pri:5, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="addFirstProductToCartTest" class="testCases.EndToEndCombinedTests"/>
+        <method signature="EndToEndCombinedTests.addNamedProductToCartTest()[pri:6, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="addNamedProductToCartTest" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- product -->
+      <group name="confirmation">
+        <method signature="EndToEndCombinedTests.fullCheckoutFlow_login_add_checkout_confirm_download_continue_checkNavs_logout()[pri:11, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="fullCheckoutFlow_login_add_checkout_confirm_download_continue_checkNavs_logout" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- confirmation -->
+      <group name="login">
+        <method signature="EndToEndCombinedTests.validLoginTest()[pri:2, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="validLoginTest" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- login -->
+      <group name="checkout">
+        <method signature="EndToEndCombinedTests.checkoutShippingAndSubmitTest()[pri:10, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="checkoutShippingAndSubmitTest" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- checkout -->
+      <group name="cart">
+        <method signature="EndToEndCombinedTests.increaseQuantityAndVerifySubtotal()[pri:7, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="increaseQuantityAndVerifySubtotal" class="testCases.EndToEndCombinedTests"/>
+        <method signature="EndToEndCombinedTests.removeItemFromCartTest()[pri:8, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="removeItemFromCartTest" class="testCases.EndToEndCombinedTests"/>
+        <method signature="EndToEndCombinedTests.addSecondItemToCartTest()[pri:9, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="addSecondItemToCartTest" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- cart -->
+      <group name="crossbrowser">
+        <method signature="EndToEndCombinedTests.verifyHomePageLoads(java.lang.String)[pri:1, instance:testCases.EndToEndCombinedTests@10e31a9a]" name="verifyHomePageLoads" class="testCases.EndToEndCombinedTests"/>
+      </group> <!-- crossbrowser -->
+    </groups>
+    <test started-at="2025-09-08T17:23:29 IST" name="EndToEndCombinationTest" finished-at="2025-09-08T17:25:35 IST" duration-ms="125407">
+      <class name="testCases.EndToEndCombinedTests">
+        <test-method signature="verifyHomePageLoads(java.lang.String)[pri:1, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:23:29 IST" name="verifyHomePageLoads" finished-at="2025-09-08T17:23:36 IST" duration-ms="6563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageLoads -->
+        <test-method signature="validLoginTest()[pri:2, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:23:36 IST" name="validLoginTest" depends-on-groups="crossbrowser" finished-at="2025-09-08T17:23:53 IST" duration-ms="16909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method signature="testFilterAndSort(java.lang.String,java.lang.String)[pri:4, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:23:53 IST" name="testFilterAndSort" data-provider="limitedFilterData" depends-on-groups="login" finished-at="2025-09-08T17:23:59 IST" duration-ms="5636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Apple]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lowest to highest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterAndSort -->
+        <test-method signature="testFilterAndSort(java.lang.String,java.lang.String)[pri:4, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:23:59 IST" name="testFilterAndSort" data-provider="limitedFilterData" depends-on-groups="login" finished-at="2025-09-08T17:24:04 IST" duration-ms="5785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Highest to lowest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterAndSort -->
+        <test-method signature="addFirstProductToCartTest()[pri:5, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:04 IST" name="addFirstProductToCartTest" depends-on-groups="filter" finished-at="2025-09-08T17:24:09 IST" duration-ms="4151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFirstProductToCartTest -->
+        <test-method signature="addNamedProductToCartTest()[pri:6, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:09 IST" name="addNamedProductToCartTest" depends-on-groups="filter" finished-at="2025-09-08T17:24:14 IST" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNamedProductToCartTest -->
+        <test-method signature="increaseQuantityAndVerifySubtotal()[pri:7, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:14 IST" name="increaseQuantityAndVerifySubtotal" depends-on-groups="product" finished-at="2025-09-08T17:24:19 IST" duration-ms="5468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- increaseQuantityAndVerifySubtotal -->
+        <test-method signature="removeItemFromCartTest()[pri:8, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:19 IST" name="removeItemFromCartTest" depends-on-groups="product" finished-at="2025-09-08T17:24:45 IST" duration-ms="26001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromCartTest -->
+        <test-method signature="addSecondItemToCartTest()[pri:9, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:45 IST" name="addSecondItemToCartTest" depends-on-groups="product" finished-at="2025-09-08T17:24:51 IST" duration-ms="5662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSecondItemToCartTest -->
+        <test-method signature="checkoutShippingAndSubmitTest()[pri:10, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:24:51 IST" name="checkoutShippingAndSubmitTest" depends-on-groups="login, cart" finished-at="2025-09-08T17:25:08 IST" duration-ms="17444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutShippingAndSubmitTest -->
+        <test-method signature="fullCheckoutFlow_login_add_checkout_confirm_download_continue_checkNavs_logout()[pri:11, instance:testCases.EndToEndCombinedTests@10e31a9a]" started-at="2025-09-08T17:25:08 IST" name="fullCheckoutFlow_login_add_checkout_confirm_download_continue_checkNavs_logout" depends-on-groups="checkout" finished-at="2025-09-08T17:25:35 IST" duration-ms="26533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullCheckoutFlow_login_add_checkout_confirm_download_continue_checkNavs_logout -->
+      </class> <!-- testCases.EndToEndCombinedTests -->
+    </test> <!-- EndToEndCombinationTest -->
+  </suite> <!-- Suite -->
+</testng-results>
